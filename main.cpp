@@ -6,7 +6,7 @@
 #include <chrono>
 #define ARRAY_SIZE 10000000
 
-// Функция для вычисления суммы элементов массива с помощью многопоточности
+
 void calculateSumMultithreading(std::vector<int>& arr) {
     auto start = std::chrono::high_resolution_clock::now();
     int numThreads = std::thread::hardware_concurrency();
@@ -41,7 +41,7 @@ void calculateSumMultithreading(std::vector<int>& arr) {
 
 }
 
-// Функция для вычисления суммы элементов массива с использованием OpenMP
+
 void calculateSumOpenMP(std::vector<int>& arr) {
      auto start = std::chrono::high_resolution_clock::now();
     int sum = 0;
